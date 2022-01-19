@@ -168,6 +168,7 @@ function ContactListPage() {
     setIsContactFormOpen(true);
   };
 
+  // TODO: Since I've been away from material UI the ListItem with button=true has been deprecated in favor of ListItemButton
   return (
     <div>
       <Paper elevation={5}>
@@ -204,12 +205,15 @@ function ContactListPage() {
         <Divider variant="middle" />
         <div style={{ display: "flex", flexDirection: "row" }}>
           <IconButton
+            aria-label="add"
             onClick={handleAddContactClick}
             style={{ display: "flex", flex: 1 }}
           >
             <AddCircleIcon />
           </IconButton>
-          <IconButton onClick={handleDeleteContactClick}>
+          <IconButton
+              aria-label="delete"
+              onClick={handleDeleteContactClick}>
             <DeleteIcon />
           </IconButton>
         </div>
@@ -225,3 +229,5 @@ function ContactListPage() {
 }
 
 export default ContactListPage;
+
+// TODO: left off trying to select the "add" button
