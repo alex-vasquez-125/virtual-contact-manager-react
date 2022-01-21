@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32be00d4-7363-4fc5-894a-e99b14824094" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/__tests__/pages/ContactListPage/InitialRenderContactListPage.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__tests__/pages/ContactListPage/ContactListPage-AddContact.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/__tests__/pages/ContactListPage.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/__tests__/pages/ContactListPage.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__tests__/pages/ContactListPage.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__tests__/pages/ContactListPage/InitialRenderContactListPage.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/__tests__/pages/ContactListPage/ContactListPage-InitialRender.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jest.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/jest.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContactForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactForm.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/ContactListPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ContactListPage.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,13 +54,69 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/__tests__/pages/ContactListPage" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Jest.user can add contact with all values filled in (1)">
+    <configuration name="Initial page render is as expected" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/__tests__/pages/ContactListPage/InitialRenderContactListPage.test.js" />
+      <test-names>
+        <test-name value="Initial page render is as expected" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="ListItem demo - Initial page render is as expected" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/__tests__/pages/ContactListPage/InitialRenderContactListPage.test.js" />
+      <test-names>
+        <test-name value="ListItem demo - Initial page render is as expected" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="user can add contact with all values filled in (1)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/__tests__/pages/ContactListPage/ContactListPage-AddContact.test.js" />
+      <test-names>
+        <test-name value="user can add contact with all values filled in" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="user can add contact with all values filled in" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/__tests__/pages/ContactListPage.test.js" />
+      <test-names>
+        <test-name value="user can add contact with all values filled in" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="user can add contact" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -72,6 +132,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.user can add contact with all values filled in (1)" />
+        <item itemvalue="Jest.user can add contact with all values filled in" />
+        <item itemvalue="Jest.Initial page render is as expected" />
+        <item itemvalue="Jest.ListItem demo - Initial page render is as expected" />
         <item itemvalue="Jest.user can add contact" />
       </list>
     </recent_temporary>
@@ -119,7 +183,9 @@
       <workItem from="1635298280231" duration="1192000" />
       <workItem from="1635348671984" duration="495000" />
       <workItem from="1642545142788" duration="10291000" />
-      <workItem from="1642605442312" duration="2421000" />
+      <workItem from="1642605442312" duration="6262000" />
+      <workItem from="1642713203027" duration="15585000" />
+      <workItem from="1642741495198" duration="3936000" />
     </task>
     <servers />
   </component>
@@ -127,25 +193,42 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1732" height="250" key="GridCell.Tab.0.bottom" timestamp="1642566974011">
-      <screen x="1792" y="25" width="1920" height="1055" />
+    <state width="1603" height="275" key="GridCell.Tab.0.bottom" timestamp="1642745609198">
+      <screen x="0" y="25" width="1792" height="1033" />
     </state>
-    <state width="1732" height="250" key="GridCell.Tab.0.bottom/0.25.1792.1034/1792.25.1920.1055@1792.25.1920.1055" timestamp="1642566974011" />
-    <state width="1732" height="250" key="GridCell.Tab.0.center" timestamp="1642566974010">
-      <screen x="1792" y="25" width="1920" height="1055" />
+    <state width="1603" height="382" key="GridCell.Tab.0.bottom/0.25.1792.1033/1792.25.1920.1055@1792.25.1920.1055" timestamp="1642734769902" />
+    <state width="1603" height="275" key="GridCell.Tab.0.bottom/0.25.1792.1033@0.25.1792.1033" timestamp="1642745609198" />
+    <state width="1732" height="267" key="GridCell.Tab.0.bottom/0.25.1792.1034/1792.25.1920.1055@1792.25.1920.1055" timestamp="1642708546681" />
+    <state width="1565" height="267" key="GridCell.Tab.0.bottom/0.25.1792.1034@0.25.1792.1034" timestamp="1642713145725" />
+    <state width="1732" height="267" key="GridCell.Tab.0.bottom/0.25.1792.1035/1792.25.1920.1055@1792.25.1920.1055" timestamp="1642708512818" />
+    <state width="1603" height="275" key="GridCell.Tab.0.center" timestamp="1642745609197">
+      <screen x="0" y="25" width="1792" height="1033" />
     </state>
-    <state width="1732" height="250" key="GridCell.Tab.0.center/0.25.1792.1034/1792.25.1920.1055@1792.25.1920.1055" timestamp="1642566974010" />
-    <state width="1732" height="250" key="GridCell.Tab.0.left" timestamp="1642566974010">
-      <screen x="1792" y="25" width="1920" height="1055" />
+    <state width="1603" height="382" key="GridCell.Tab.0.center/0.25.1792.1033/1792.25.1920.1055@1792.25.1920.1055" timestamp="1642734769902" />
+    <state width="1603" height="275" key="GridCell.Tab.0.center/0.25.1792.1033@0.25.1792.1033" timestamp="1642745609197" />
+    <state width="1732" height="267" key="GridCell.Tab.0.center/0.25.1792.1034/1792.25.1920.1055@1792.25.1920.1055" timestamp="1642708546680" />
+    <state width="1565" height="267" key="GridCell.Tab.0.center/0.25.1792.1034@0.25.1792.1034" timestamp="1642713145724" />
+    <state width="1732" height="267" key="GridCell.Tab.0.center/0.25.1792.1035/1792.25.1920.1055@1792.25.1920.1055" timestamp="1642708512818" />
+    <state width="1603" height="275" key="GridCell.Tab.0.left" timestamp="1642745609196">
+      <screen x="0" y="25" width="1792" height="1033" />
     </state>
-    <state width="1732" height="250" key="GridCell.Tab.0.left/0.25.1792.1034/1792.25.1920.1055@1792.25.1920.1055" timestamp="1642566974010" />
-    <state width="1732" height="250" key="GridCell.Tab.0.right" timestamp="1642566974011">
-      <screen x="1792" y="25" width="1920" height="1055" />
+    <state width="1603" height="382" key="GridCell.Tab.0.left/0.25.1792.1033/1792.25.1920.1055@1792.25.1920.1055" timestamp="1642734769902" />
+    <state width="1603" height="275" key="GridCell.Tab.0.left/0.25.1792.1033@0.25.1792.1033" timestamp="1642745609196" />
+    <state width="1732" height="267" key="GridCell.Tab.0.left/0.25.1792.1034/1792.25.1920.1055@1792.25.1920.1055" timestamp="1642708546680" />
+    <state width="1565" height="267" key="GridCell.Tab.0.left/0.25.1792.1034@0.25.1792.1034" timestamp="1642713145724" />
+    <state width="1732" height="267" key="GridCell.Tab.0.left/0.25.1792.1035/1792.25.1920.1055@1792.25.1920.1055" timestamp="1642708512817" />
+    <state width="1603" height="275" key="GridCell.Tab.0.right" timestamp="1642745609197">
+      <screen x="0" y="25" width="1792" height="1033" />
     </state>
-    <state width="1732" height="250" key="GridCell.Tab.0.right/0.25.1792.1034/1792.25.1920.1055@1792.25.1920.1055" timestamp="1642566974011" />
-    <state x="2468" y="268" width="670" height="676" key="search.everywhere.popup" timestamp="1642564292389">
-      <screen x="1792" y="25" width="1920" height="1055" />
+    <state width="1603" height="382" key="GridCell.Tab.0.right/0.25.1792.1033/1792.25.1920.1055@1792.25.1920.1055" timestamp="1642734769902" />
+    <state width="1603" height="275" key="GridCell.Tab.0.right/0.25.1792.1033@0.25.1792.1033" timestamp="1642745609197" />
+    <state width="1732" height="267" key="GridCell.Tab.0.right/0.25.1792.1034/1792.25.1920.1055@1792.25.1920.1055" timestamp="1642708546681" />
+    <state width="1565" height="267" key="GridCell.Tab.0.right/0.25.1792.1034@0.25.1792.1034" timestamp="1642713145724" />
+    <state width="1732" height="267" key="GridCell.Tab.0.right/0.25.1792.1035/1792.25.1920.1055@1792.25.1920.1055" timestamp="1642708512818" />
+    <state x="631" y="263" width="670" height="662" key="search.everywhere.popup" timestamp="1642745784753">
+      <screen x="0" y="25" width="1792" height="1033" />
     </state>
+    <state x="631" y="263" width="670" height="662" key="search.everywhere.popup/0.25.1792.1033@0.25.1792.1033" timestamp="1642745784753" />
     <state x="2468" y="268" width="670" height="676" key="search.everywhere.popup/0.25.1792.1034/1792.25.1920.1055@1792.25.1920.1055" timestamp="1642564292389" />
   </component>
 </project>

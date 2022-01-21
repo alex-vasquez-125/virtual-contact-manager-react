@@ -82,6 +82,8 @@ function ContactForm(props) {
     setIsGenderSelectionInErrorState,
   ] = useState(false);
 
+  const [isContactFormOpen, setIsContactFormOpen] = useState(false);
+
   useEffect(() => {
     if (props.contactToEdit) {
       setId(props.contactToEdit.id);
@@ -97,6 +99,10 @@ function ContactForm(props) {
       setGenderSelection(props.contactToEdit.genderSelection);
     }
   }, [props.contactToEdit]);
+
+  useEffect(() => {
+    setIsContactFormOpen(props.isContactFormOpen);
+  }, [props.isContactFormOpen]);
 
   const handleCloseAddContactForm = () => {
     props.closeContactForm();
@@ -291,24 +297,26 @@ function ContactForm(props) {
   };
 
   return (
-    <Dialog open={props.isContactFormOpen} onClose={handleCloseAddContactForm}>
+    <Dialog open={isContactFormOpen} onClose={handleCloseAddContactForm}>
       <DialogTitle>Add new contact</DialogTitle>
       <DialogContent>
         <DialogContentText>Add contact details</DialogContentText>
         <Grid container spacing={2}>
           <Grid item xs={4}>
             <TextField
-              error={isFirstNameInErrorState}
-              label="First Name"
-              variant="outlined"
-              helperText={firstNameHelperText}
-              onChange={handleFirstNameInput}
-              required={true}
-              value={fistName}
+                id="first-name"
+                error={isFirstNameInErrorState}
+                label="First Name"
+                variant="outlined"
+                helperText={firstNameHelperText}
+                onChange={handleFirstNameInput}
+                required={true}
+                value={fistName}
             />
           </Grid>
           <Grid item xs={4}>
             <TextField
+              id="middle-name"
               error={isMiddleNameInErrorState}
               label="Middle Name"
               variant="outlined"
@@ -320,6 +328,7 @@ function ContactForm(props) {
           <Grid item xs={4}>
             <TextField
               error={isLastNameInErrorState}
+              id="last-name"
               label="Last Name"
               variant="outlined"
               helperText={lastNameHelperText}
@@ -330,6 +339,7 @@ function ContactForm(props) {
           <Grid item xs={4}>
             <TextField
               error={isCellPhoneNumberInErrorState}
+              id="cell-phone-number"
               label="Cell Phone Number"
               variant="outlined"
               helperText={cellPhoneNumberHelperText}
@@ -340,6 +350,7 @@ function ContactForm(props) {
           <Grid item xs={4}>
             <TextField
               error={isPhoneNumberInErrorState}
+              id="phone-number"
               label="Phone Number"
               variant="outlined"
               helperText={phoneNumberHelperText}
@@ -350,6 +361,7 @@ function ContactForm(props) {
           <Grid item xs={4}>
             <TextField
               error={isEmailAddressInErrorState}
+              id="email-address"
               label="Email Address"
               variant="outlined"
               helperText={emailAddressHelperText}
@@ -360,6 +372,7 @@ function ContactForm(props) {
           <Grid item xs={4}>
             <TextField
               error={isAddressInErrorState}
+              id="address"
               label="Address"
               variant="outlined"
               helperText={addressHelperText}
@@ -370,6 +383,7 @@ function ContactForm(props) {
           <Grid item xs={4}>
             <TextField
               error={isAddressStateInErrorState}
+              id="state"
               label="State"
               variant="outlined"
               helperText={addressStateHelperText}
@@ -380,6 +394,7 @@ function ContactForm(props) {
           <Grid item xs={4}>
             <TextField
               error={isAddressZipCodeInErrorState}
+              id="zip-code"
               label="Zip Code"
               variant="outlined"
               helperText={addressZipCodeHelperText}
@@ -423,7 +438,10 @@ function ContactForm(props) {
           </Grid>
         </Grid>
         <DialogActions>
-          <IconButton onClick={handleSaveContact}>
+          <IconButton
+              onClick={handleSaveContact}
+              aria-label="submit-new-contact-dialog-btn"
+          >
             <AddCircleIcon />
           </IconButton>
         </DialogActions>

@@ -205,14 +205,14 @@ function ContactListPage() {
         <Divider variant="middle" />
         <div style={{ display: "flex", flexDirection: "row" }}>
           <IconButton
-            aria-label="add"
+            aria-label="add-contact"
             onClick={handleAddContactClick}
             style={{ display: "flex", flex: 1 }}
           >
             <AddCircleIcon />
           </IconButton>
           <IconButton
-              aria-label="delete"
+              aria-label="delete-contact"
               onClick={handleDeleteContactClick}>
             <DeleteIcon />
           </IconButton>
