@@ -108,16 +108,16 @@ function ContactListPage() {
     addressZipCode,
     genderSelection
   ) => {
-    console.log("firstName: ", firstName);
-    console.log(`middleName: ${middleName}`);
-    console.log(`lastName: ${lastName}`);
-    console.log(`phoneNumber: ${phoneNumber}`);
-    console.log(`cellPhone: ${cellPhoneNumber}`);
-    console.log(`emailAddress: ${emailAddress}`);
-    console.log(`address: ${address}`);
-    console.log(`addressState: ${addressState}`);
-    console.log(`addressZipCode: ${addressZipCode}`);
-    console.log(`genderSelection: ${genderSelection}`);
+    // console.log("firstName: ", firstName);
+    // console.log(`middleName: ${middleName}`);
+    // console.log(`lastName: ${lastName}`);
+    // console.log(`phoneNumber: ${phoneNumber}`);
+    // console.log(`cellPhone: ${cellPhoneNumber}`);
+    // console.log(`emailAddress: ${emailAddress}`);
+    // console.log(`address: ${address}`);
+    // console.log(`addressState: ${addressState}`);
+    // console.log(`addressZipCode: ${addressZipCode}`);
+    // console.log(`genderSelection: ${genderSelection}`);
 
     if (id) {
       let found = false; // todo find better way to do this

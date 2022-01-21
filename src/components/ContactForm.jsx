@@ -15,6 +15,9 @@ import AddCircleIcon from "@material-ui/icons/AddCircle";
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
+// TODO: refactor this to be reused by new contact work flow and edit existing contact work flow
+// * pass in headers as props
+// * rename add button
 function ContactForm(props) {
   const [id, setId] = useState(undefined);
 
