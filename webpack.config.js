@@ -36,7 +36,7 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
   },
   devServer: {
-    contentBase: "./dist", // path.join(__dirname, './dist'),
+    // contentBase: "./dist", // path.join(__dirname, './dist'),
     compress: true,
     historyApiFallback: true,
     port: 9000,

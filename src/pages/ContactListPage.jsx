@@ -229,5 +229,3 @@ function ContactListPage() {
 }
 
 export default ContactListPage;
-
-// TODO: left off trying to select the "add" button

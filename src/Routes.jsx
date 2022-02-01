@@ -1,10 +1,11 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import App from "./App";
+// import App from "./App";
 import Header from "./components/Header";
 import ContactTablePage from "./pages/ContactTablePage";
 import ContactListPage from "./pages/ContactListPage";
 import ContactCardPage from "./pages/ContactCardPage";
+import { Counter } from "./components/Counter";
 
 function Routes() {
   return (
@@ -13,7 +14,7 @@ function Routes() {
         <Header />
         <Switch>
           <Route path="/" exact>
-            <App />
+            <Counter/>
           </Route>
           <Route path="/table">
             <ContactTablePage />

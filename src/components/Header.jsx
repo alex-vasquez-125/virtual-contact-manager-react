@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
@@ -8,12 +9,15 @@ import MenuItem from "@material-ui/core/MenuItem";
 import MenuIcon from "@material-ui/icons/Menu";
 import Typography from "@material-ui/core/Typography";
 
+// todo: figure out how to use history or location https://v5.reactrouter.com/web/api/Router
 function Header() {
   const [anchorEl, setAnchorEl] = useState(null);
-  const history = useHistory();
+  const navigate = useNavigate();
 
+  // todo: finish impl navigate and replace history
+  // todo: figure out diff btw react router and react router dom and the migration from v5 to v6 in react router https://reactrouter.com/docs/en/v6/getting-started/overview
   function handleTableClick() {
-    history.push("/table");
+    navigate("/table");
     closeMenu();
   }
 

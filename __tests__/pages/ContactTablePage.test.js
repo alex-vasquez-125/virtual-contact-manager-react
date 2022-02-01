@@ -1,6 +1,5 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import "@testing-library/jest-dom";
 import ContactTablePage from "../../src/pages/ContactTablePage";
 
 describe("Contact table page", () => {

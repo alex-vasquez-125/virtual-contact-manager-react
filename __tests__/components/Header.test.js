@@ -1,9 +1,7 @@
 import React from "react";
-import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import Header from "../../src/components/Header";
-// import { prettyDOM } from '@testing-library/dom';
 
 describe("Header component", () => {
   test("Header should render Table, Card, and List text when clicking menu icon", () => {

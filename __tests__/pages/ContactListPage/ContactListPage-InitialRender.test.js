@@ -1,6 +1,5 @@
 import React from "react";
 import { render, screen, within } from "@testing-library/react";
-import "@testing-library/jest-dom";
 import ContactListPage from "../../../src/pages/ContactListPage";
 
 // todo: was having trouble grabbing the edit icon button associated with a listitem. the checkbox shows up in the printed DOM but not the edit icon button. check the component

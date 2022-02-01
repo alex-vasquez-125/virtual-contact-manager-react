@@ -1,6 +1,5 @@
 import React from "react";
 import { render, screen, waitFor, within } from "@testing-library/react";
-import "@testing-library/jest-dom";
 import ContactListPage from "../../../src/pages/ContactListPage";
 import userEvent from '@testing-library/user-event';
 
